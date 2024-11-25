@@ -1,4 +1,4 @@
-import './SearchUser.css';
+import './searchUser.css';
 import React, { useState } from 'react';
 import { FaRegWindowClose } from "react-icons/fa";
 import { TbUserSearch } from "react-icons/tb";
