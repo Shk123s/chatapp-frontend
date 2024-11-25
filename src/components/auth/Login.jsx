@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
+import { host } from '../../utils/host';
 
 const Login = () => {
   const userNameRef = useRef();
@@ -52,7 +53,7 @@ const Login = () => {
         window.location.reload();
       }
     } catch (error) {
-
+       console.log(error)
       if (error.response && error.response.status === 401) {
         setErrorMessage('Invalid username or password');
       } else {
