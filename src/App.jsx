@@ -1,5 +1,5 @@
 import Login from "../src/components/auth/Login"
-import Signup from "./components/auth/signup";
+import Signup from "./components/auth/Signup";
 import  { MyContextProvider } from "./components/context/MyContext";
 import ChatPage from "./pages/ChatPage";
 import { ToastContainer } from 'react-toastify';
