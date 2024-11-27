@@ -19,7 +19,7 @@ const Contacts = ({ setUserView }) => {
   const [selectedChat, setSelectedChat] = useState(null); 
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    // const token = localStorage.getItem("token");
     const fetchData = async () => {
       try {
         const getData = await axios.get(
