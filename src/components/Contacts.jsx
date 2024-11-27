@@ -24,11 +24,7 @@ const Contacts = ({ setUserView }) => {
       try {
         const getData = await axios.get(
           `${host}/api/getConversation`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
+          { withCredentials: true }
         );
         setData(getData.data.message);
         setLoading(false);
